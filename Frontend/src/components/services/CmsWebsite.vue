@@ -9,8 +9,8 @@
                         <div class="section-heading">
                             <h6>CMS Website Development</h6>
                             <h2>Design & Development</h2>
-                            <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <p>CMS stands for Content Management System, which is essentially software that helps you to build a website. It may provide you with templates, and it will definitely give you a way to create and manage digital content — most often through a user-friendly WYSWYG editor which is similar to using Microsoft Word.</p>
+                            <p>WordPress is by far the most popular CMS for web development, web hosting and blogging. It is free and easy to use, powered by software that is created by a vast open source community of volunteers who constantly offer new web development solutions. There are so many CMS on which we can develop websites like WordPress, Webflow, Prestashop, Wix, Joomla, Opencart, Squarespace, Drupal, Blogger, etc.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Responsiveness', desc:'Responsiveness on mobiles, tablets and yes on desktops too.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best CMS Website Development Company in India | Creative Web X'
     }
 }
 </script>

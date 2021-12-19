@@ -9,8 +9,8 @@
                         <div class="section-heading">
                             <h6>Mobile App Development</h6>
                             <h2>Design & Development</h2>
-                            <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <p>We develop beautiful and high functioning Apps in all languages. The app development process starts with outlining the structure of the app content just like a blueprint. The information architecture helps in structuring the flow of information. IA helps in making the process simple for the designer and intuitive to navigate. We always make the IA scalable and comprehendible.</p>
+                            <p>Front end app development involves the interface development, how will the application look. Deciding the theme, images, font, style, and its presentation, while backend app development involves the development of the functionalities, how will it function or work. Managing the database, the users and their security, and app performance issues etc. We create the front end using primarily 3 languages, such as HTML, CSS, Java script while our great coding minds who excel in programming languages like PHP, Ruby, Python, Node.js, and Java and proficient in MySQL, Oracle, and SQL Server databases develops the backend.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Customization', desc:'Highend customisation in app design and functionalities.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best Mobile App Development Company in India | Creative Web X'
     }
 }
 </script>

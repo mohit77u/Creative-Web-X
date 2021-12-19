@@ -22,7 +22,7 @@ export default createStore({
   actions: {
       Register(context,registration){
           return new Promise((resolve,reject)=>{
-              axios.post('http://localhost:8000/api/signup',registration)
+              axios.post('https://shop-backend.betamxpertz.xyz/api/signup',registration)
               .then(res=>{
                   resolve(res)
               }).catch(error=>{
@@ -33,7 +33,7 @@ export default createStore({
       },
       RegisterAdmin(context,registration){
           return new Promise((resolve,reject)=>{
-              axios.post('http://localhost:8000/api/addadmin',registration)
+              axios.post('https://shop-backend.betamxpertz.xyz/api/addadmin',registration)
               .then(res=>{
                   resolve(res)
               }).catch(error=>{
@@ -44,7 +44,7 @@ export default createStore({
       },
       Login(context,login){
           return new Promise((resolve,reject)=>{
-              axios.post('http://localhost:8000/api/signin',login)
+              axios.post('https://shop-backend.betamxpertz.xyz/api/signin',login)
               .then(res=>{
                   localStorage.setItem('token', res.data.token)
                   context.commit('setToken', res.data.token)

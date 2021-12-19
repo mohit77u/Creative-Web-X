@@ -18,6 +18,7 @@ import Vue from '../components/services/Vuejs.vue'
 import Blog from '../components/blog/Blog.vue'
 import SingleBlog from '../components/blog/SingleBlog.vue'
 import CategoryBlog from '../components/blog/CategoryBlog.vue'
+import SearchBlog from '../components/blog/SearchBlog.vue'
 
 // import Register from '../components/auth/Register.vue'
 import Login from '../components/auth/Login.vue'
@@ -55,6 +56,7 @@ const routes = [
   { path: '/blog', name: 'Blog', component: Blog },
   { path: '/blog/:id/:slug', name: 'SingleBlog', component: SingleBlog },
   { path: '/blog/category/:id/:slug', name: 'CategoryBlog', component: CategoryBlog },
+  { path: '/blog/search/q=:search', name: 'SearchBlog', component: SearchBlog },
 
   // { path: '/register', name: 'Register', component: Register },
   { path: '/login', name: 'Login', component: Login },

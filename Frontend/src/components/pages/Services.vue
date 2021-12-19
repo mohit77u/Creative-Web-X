@@ -75,6 +75,9 @@ export default {
                 {image:'digital.png', title:'Vue Development', desc:'One java script framework has become very popular among all frameworks and that is Vue.js. An advanced frontend java script framework for building user interface and single page application. As it contains powerful tools which help to build highly scalable and interactive application it is mainly used for mobile application development.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Services we are offering | Best Web Development Company in India | Creative Web X'
     }
 }
 </script>

@@ -159,7 +159,7 @@ export default {
             data.append('contentfive', this.blog.contentfive);
             data.append('headingsix', this.blog.headingsix);
             data.append('contentsix', this.blog.contentsix);
-            axios.post('http://localhost:8000/api/blogs', data,config)
+            axios.post('https://shop-backend.betamxpertz.xyz/api/blogs', data,config)
             .then(()=>{
                 this.loading= false
                 this.$swal({
@@ -176,7 +176,7 @@ export default {
             })
         },
         fetchAllCategories() {
-            axios.get('http://localhost:8000/api/blog_categories')
+            axios.get('https://shop-backend.betamxpertz.xyz/api/blog_categories')
             .then(res => {
                 this.categories = res.data
             })
@@ -188,6 +188,7 @@ export default {
     },
     mounted(){
         this.fetchAllCategories();
+        document.title = 'Add New Blog on Creative Web X'
     }
     
 }

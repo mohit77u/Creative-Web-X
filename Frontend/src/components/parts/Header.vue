@@ -69,7 +69,7 @@
             <li class="nav-item" v-if="loggedIn">
               <a class="nav-link" href="#" @click="Logout">Log Out</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item getbtn">
               <router-link class="primarybtn" to="/contact">Get Started</router-link>
             </li>
           </ul>
@@ -80,7 +80,7 @@
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                 <router-link class="navbar-brand" to="/">Creative Web<img class="logo" src="/images/logo.png" alt="logo"></router-link>
             </h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav">
@@ -131,6 +131,9 @@
               <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
                 <router-link class="nav-link" to="/blog">Blog</router-link>
               </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                <router-link class="nav-link" to="/contact">Contact us</router-link>
+              </li>
               <!-- <li class="nav-item" v-if="!loggedIn" data-bs-dismiss="offcanvas" aria-label="Close">
                 <router-link class="nav-link" to="/register">Register</router-link>
               </li>
@@ -140,6 +143,8 @@
               <li class="nav-item" v-if="loggedIn" data-bs-dismiss="offcanvas" aria-label="Close">
                 <a class="nav-link" href="#" @click="Logout">Log Out</a>
               </li>
+              
+              <!-- <router-link class="primarybtn w-100 text-center mt-2" to="/contact">Get Started</router-link> -->
             </ul>
             <div class="social" data-bs-dismiss="offcanvas" aria-label="Close">
                 <a href="https://www.facebook.com/imohiitsingh" target="blank"><i class="fab fa-facebook-f"></i></a>

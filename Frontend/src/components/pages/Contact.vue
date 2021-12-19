@@ -5,14 +5,15 @@
         <section class="about contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6" data-aos="fade-right" data-aos-delay="600">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5" data-aos="fade-right" data-aos-delay="600">
                         <div class="section-heading">
                             <h6>Contact us</h6>
-                            <h2>Connect Today</h2>
+                            <h2>Connect today</h2>
                             <div class="left-contact mt-3">
                                 <ul>
                                     <li><i class="fas fa-home"></i>  Indore, Madhya Pradesh</li>
-                                    <li><i class="fas fa-envelope"></i> mohiit77u@gmail.com</li>
+                                    <li><i class="fas fa-envelope"></i> info@creativewebx.thats.im</li>
                                     <li><i class="fas fa-home"></i> +91 8269584409</li>
                                 </ul>
                                 <div class="social mt-5">
@@ -25,13 +26,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-1"></div>
                     <div class="col-sm-5"  data-aos="fade-left" data-aos-delay="800">
                         <div class="about-form">
-                            <h3>Feel free to connect with me for any requirement</h3> 
+                            <h3>Feel free to connect with us for any requirement</h3> 
                             <ContactForm/>
                         </div>
                     </div>
+                    <div class="col-sm-1"></div>
                 </div>
             </div>
         </section>
@@ -51,6 +52,9 @@ export default {
             title:'Contact'
         }
     },
+    mounted(){
+        document.title = 'Contact us to get more details about us | Creative Web X'
+    }
 
 }
 </script>

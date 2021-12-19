@@ -45,7 +45,7 @@ export default {
     methods: {
         Reset(){
             this.loading= true
-            axios.post('http://localhost:8000/api/reset',{
+            axios.post('https://shop-backend.betamxpertz.xyz/api/reset',{
                 password: this.reset.password,
                 password_confirmation: this.reset.password_confirmation,
                 token: this.$route.params.token
@@ -66,6 +66,9 @@ export default {
             })
             
         }
+    },
+    mounted(){
+        document.title = 'Reset Your Password on Creative Web X'
     }
 }
 </script>

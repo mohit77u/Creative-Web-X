@@ -66,7 +66,7 @@ export default {
             data.append('category_name', this.category.category_name);
             data.append('url', this.category.url);
             data.append('file', this.category.file);
-            axios.post('http://localhost:8000/api/blog_categories', data,config)
+            axios.post('https://shop-backend.betamxpertz.xyz/api/blog_categories', data,config)
             .then(()=>{
                 this.loading= false
                 this.category = {
@@ -87,6 +87,8 @@ export default {
             })
         },
     },
-    
+    mounted(){
+        document.title = 'Add New Blog Category on Creative Web X'
+    }
 }
 </script>

@@ -120,6 +120,9 @@ export default {
                 {number:'05', title:'Support & Maintenance', desc:'Your new website is live, but your business is changing every day! The best changes are due to growth. Our team is standing by, ready to make changes at your request.'},
             ],
         }
+    },
+    mounted(){
+        document.title = 'About us | Best Web Development Company in India | Creative Web X'
     }
 }
 </script>

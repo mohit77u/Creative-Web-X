@@ -9,8 +9,9 @@
                         <div class="section-heading">
                             <h6>React js Development</h6>
                             <h2>Design & Development</h2>
-                            <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <p>Having a website without using any of the three major frontend frameworks is a sin. It is akin to not keeping up with the latest technological trends in website development. React JS along with two other frontend frameworks, Angular JS and Vue have truly revolutionized the world of web development.</p>
+                            <p>React is the future of website design and development, and you need to check whether your website uses this technology or not.</p>
+                            <p>Since React uses virtual DOM, the page renders very smoothly using less time. This improves the user experience and SEO results. The data gets shown in real-time without the need for the page to reload. On Facebook, when you like a post, the number increases immediately without having the page to reload.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +90,9 @@ export default {
                 {image:'responsive.png', title:'React based mobile App development', desc:'React Native us used prominantly for developing apps.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best React Development Company in India | Creative Web X'
     }
 }
 </script>

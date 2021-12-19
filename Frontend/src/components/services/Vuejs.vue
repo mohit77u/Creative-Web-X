@@ -9,8 +9,8 @@
                         <div class="section-heading">
                             <h6>Vue js Development</h6>
                             <h2>Design & Development</h2>
-                            <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <p>One java script framework has become very popular among all frameworks and that is Vue.js. An advanced frontend java script framework for building user interface and single page application. As it contains powerful tools which help to build highly scalable and interactive application it is mainly used for mobile application development. It is also light weighted, high performing and very much versatile which makes it unique from other frameworks.</p>
+                            <p>Being one of the best Vue.js development company in India our team of cost effective developers have delivered high quality Vue application at the speed required. At Creative Web X, we ensure you the followings:</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Fast with clean codes', desc:'The websites are easy to maintain as the code structure is pretty clean.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best Vue js Development Company in India | Creative Web X'
     }
 }
 </script>

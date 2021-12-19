@@ -73,6 +73,9 @@ export default {
             });
             this.$router.push('/')
         }
+    },
+    mounted(){
+        document.title = 'Login Admin Dashboard | Creative Web X'
     }
 }
 </script>

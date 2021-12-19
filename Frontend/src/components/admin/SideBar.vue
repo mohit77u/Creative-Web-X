@@ -21,7 +21,7 @@ export default {
         }
     },
      created(){
-        axios.get('http://localhost:8000/api/user',{
+        axios.get('https://shop-backend.betamxpertz.xyz/api/user',{
             headers:{
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }

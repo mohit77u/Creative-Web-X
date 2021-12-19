@@ -71,15 +71,21 @@ input:focus, textarea:focus {
   .header .circle, .sticky .circle {
     display: none;
   }
+  .sidebar {
+    padding-left: 0 !important;
+  }
   .logo {
     width: 50px;
-    margin-left: 0 !important;
+    margin-left: 3px !important;
   }
   h1 {
     font-size: 50px !important;
   }
   h2 {
     font-size: 35px !important;
+  }
+  h3 {
+    font-size: 30px !important;
   }
   p {
     font-size: 17px !important;
@@ -108,26 +114,6 @@ input:focus, textarea:focus {
 ::selection {
   background: #fb476c;
   color: white;
-}
-
-.form .sendbtn {
-  background: #7c75f4;
-  border: 2px solid #7c75f4;
-  color: white;
-  border-radius: 5px;
-  padding: 12px 30px;
-  width: 100%;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.form .sendbtn:hover {
-  background: white;
-  color: black;
-}
-
-.form .alert {
-  margin: 15px 0;
 }
 
 .navbar-toggler {
@@ -177,12 +163,28 @@ input:focus, textarea:focus {
   transition: 0.7s ease-in-out;
 }
 
+.offcanvas .btn-close {
+  background: #7c75f4;
+  opacity: 1;
+  line-height: 1em;
+}
+
+.offcanvas .btn-close i {
+  color: white;
+}
+
 .offcanvas .offcanvabottomlogo {
   display: block !important;
 }
 
 .offcanvas .social {
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .offcanvas .social a i {
@@ -364,7 +366,7 @@ input:focus, textarea:focus {
 .primarybtn {
   background: #7c75f4;
   color: white;
-  padding: 15px 45px;
+  padding: 12px 45px;
   border: 2px solid #7c75f4;
   border-radius: 5px;
   -webkit-transition: 0.3s ease-in-out;
@@ -384,7 +386,7 @@ input:focus, textarea:focus {
 .darkbtn {
   background: transparent;
   color: white;
-  padding: 15px 45px;
+  padding: 12px 45px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   margin: 10px 0;
   border-radius: 4px;
@@ -499,14 +501,8 @@ input:focus, textarea:focus {
   font-size: 10px;
 }
 
-.navbar .navbar-nav .nav-item .letsbtn {
-  color: white;
-  padding: 10px 30px;
-  cursor: pointer;
-}
-
-.navbar .navbar-nav .nav-item .letsbtn:hover {
-  color: #7c75f4;
+.navbar .navbar-nav .getbtn {
+  margin-left: 20px;
 }
 
 .navbar .cart-button {
@@ -1036,7 +1032,7 @@ input:focus, textarea:focus {
   padding: 0 25px;
 }
 
-.blog .col-sm-8 .row .blog-card {
+.blog .row .blog-card {
   border: none;
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
@@ -1044,32 +1040,32 @@ input:focus, textarea:focus {
   transition: 0.5s ease-in-out;
 }
 
-.blog .col-sm-8 .row .blog-card:hover {
+.blog .row .blog-card:hover {
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
 }
 
-.blog .col-sm-8 .row .blog-card:hover .blogtitle {
+.blog .row .blog-card:hover .blogtitle {
   color: #7c75f4 !important;
 }
 
-.blog .col-sm-8 .row .blog-card:hover img {
+.blog .row .blog-card:hover img {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }
 
-.blog .col-sm-8 .row .blog-card .blog-top {
+.blog .row .blog-card .blog-top {
   overflow: hidden;
   position: relative;
 }
 
-.blog .col-sm-8 .row .blog-card .blog-top img {
+.blog .row .blog-card .blog-top img {
   width: 100%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-.blog .col-sm-8 .row .blog-card .blog-top p {
+.blog .row .blog-card .blog-top p {
   position: absolute;
   left: 20px;
   bottom: 10px;
@@ -1080,7 +1076,7 @@ input:focus, textarea:focus {
   font-size: 15px;
 }
 
-.blog .col-sm-8 .row .blog-card .find {
+.blog .row .blog-card .find {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1090,7 +1086,7 @@ input:focus, textarea:focus {
   margin: 20px 0;
 }
 
-.blog .col-sm-8 .row .blog-card .find .line {
+.blog .row .blog-card .find .line {
   width: 40px;
   height: 1px;
   background: rgba(0, 0, 0, 0.2);
@@ -1100,25 +1096,26 @@ input:focus, textarea:focus {
   transition: 0.5s ease-in-out;
 }
 
-.blog .col-sm-8 .row .blog-card .find .findbtn {
+.blog .row .blog-card .find .findbtn {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   margin-bottom: 0;
   color: #fb476c;
 }
 
-.blog .col-sm-8 .row .blog-card .card-body .blogtitle {
+.blog .row .blog-card .card-body .blogtitle {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   color: black;
 }
 
-.blog .col-sm-8 .row .blog-card .card-body p {
+.blog .row .blog-card .card-body p {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   display: -webkit-box;
+  font-size: 17px;
 }
 
 .blog .col-sm-4 {
@@ -1128,6 +1125,10 @@ input:focus, textarea:focus {
 .single-blog .single img {
   width: 100%;
   max-height: 450px;
+}
+
+.single-blog .single p {
+  font-size: 17px;
 }
 
 .contact .row {

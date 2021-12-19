@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Responsiveness', desc:'Responsiveness on mobiles, tablets and yes on desktops too.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best Frontend Development Company in India | Creative Web X'
     }
 }
 </script>

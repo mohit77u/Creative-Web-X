@@ -25,7 +25,7 @@
                                         <td>{{ index+1 }}</td>
                                         <td>{{ blog.title }}</td>
                                         <td>{{ blog.slug }}</td>
-                                        <td><img :src="'http://localhost:8000' + blog.featured_image" :alt="blog.title"></td>
+                                        <td><img :src="'https://shop-backend.betamxpertz.xyz' + blog.featured_image" :alt="blog.title"></td>
                                         <td><router-link class="btn btn-outline-success" :to="{name: 'editBlog', params: {id: blog.id, url: blog.slug,}}">Edit</router-link></td>
                                         <td><button class="btn btn-outline-danger" @click="deleteBlog(blog.id)">Delete</button></td>
                                     </tr>
@@ -49,7 +49,7 @@ export default {
     },
     methods: {
         fetchAllBlogs() {
-            axios.get('http://localhost:8000/api/blogs')
+            axios.get('https://shop-backend.betamxpertz.xyz/api/blogs')
             .then(response => {
                 this.blogs = response.data
             })
@@ -59,7 +59,7 @@ export default {
             
         },
         deleteBlog(id) {
-            axios.delete(`http://localhost:8000/api/blogs/${id}`)
+            axios.delete(`https://shop-backend.betamxpertz.xyz/api/blogs/${id}`)
             .then(() => {
                 this.fetchAllBlogs();
                 this.$swal({
@@ -77,7 +77,8 @@ export default {
         },
     },
     mounted() {
-        this.fetchAllBlogs()
+        this.fetchAllBlogs();
+        document.title = 'All Blogs created by Creative Web X'
     },
     
 }

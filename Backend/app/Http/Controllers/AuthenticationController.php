@@ -126,4 +126,9 @@ class AuthenticationController extends Controller
 
         return response(['message'=>'Password Successfully Updated.'], 200);
     }
+
+    public function deleteuser(User $user){
+        $user->delete();
+        return response(['message' => 'User deleted Successfully !!'], 204);
+    }
 }

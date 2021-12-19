@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/user', 'AuthenticationController@user')->middleware('auth:api');
 Route::get('/users', 'AuthenticationController@allusers');
+Route::post('/delete/{user}', 'AuthenticationController@deleteuser');
 Route::post('/signup', 'AuthenticationController@register');
 Route::post('/signin', 'AuthenticationController@login');
 Route::post('/forgot', 'AuthenticationController@forgot');

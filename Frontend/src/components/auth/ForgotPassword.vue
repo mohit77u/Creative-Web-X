@@ -40,7 +40,7 @@ export default {
     methods: {
         Forgot(){
             this.loading= true
-            axios.post('http://localhost:8000/api/forgot',this.forgot)
+            axios.post('https://shop-backend.betamxpertz.xyz/api/forgot',this.forgot)
             .then(()=>{
                 this.loading= false
                 this.$swal({
@@ -57,6 +57,9 @@ export default {
             })
             
         }
+    },
+    mounted(){
+        document.title = 'Forgot Password on Creative Web X'
     }
 }
 </script>

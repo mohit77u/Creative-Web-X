@@ -4,7 +4,7 @@
             <div class="all-jobs" v-if="users">
                 <h2 class="text-center my-2">Admin Details</h2>
                 <div class="add-new-btn mb-3">
-                    <router-link class="btn btn-outline-success" to="/dashboard/add-admin" >Add New Admin</router-link>
+                    <!-- <router-link class="btn btn-outline-success" to="/dashboard/add-admin" >Add New Admin</router-link> -->
                 </div>
                 <div class="table-responsive">
                     <table class="table">
@@ -48,7 +48,7 @@
                             <tr v-for="(category,index) in categories" :key="index">
                                 <td>{{ index+1 }}</td>
                                 <td>{{ category.category_name }}</td>
-                                <td><img :src="'http://localhost:8000' + category.image" :alt="category.category_name"></td>
+                                <td><img :src="'https://shop-backend.betamxpertz.xyz' + category.image" :alt="category.category_name"></td>
                                 <td><button class="btn btn-outline-danger" @click="deleteCategory(category.id)">Delete</button></td>
                             </tr>
                         </tbody>
@@ -71,7 +71,7 @@ export default {
     },
     methods: {
         fetchAllUsers() {
-            axios.get('http://localhost:8000/api/users', this.users)
+            axios.get('https://shop-backend.betamxpertz.xyz/api/users', this.users)
             .then(response => this.users = response.data)
             .catch(error=>{
                 console.log(error)
@@ -79,7 +79,7 @@ export default {
             
         },
         deleteUser(id) {
-            axios.post(`http://localhost:8000/api/delete/${id}`)
+            axios.post(`https://shop-backend.betamxpertz.xyz/api/delete/${id}`)
             .then(() => {
                 this.fetchAllUsers();
                 this.$swal({
@@ -95,7 +95,7 @@ export default {
             }) 
         },
         fetchAllCategories() {
-            axios.get('http://localhost:8000/api/blog_categories')
+            axios.get('https://shop-backend.betamxpertz.xyz/api/blog_categories')
             .then(res => {
                 this.categories = res.data
             })
@@ -105,7 +105,7 @@ export default {
             
         },
         deleteCategory(id) {
-            axios.delete(`http://localhost:8000/api/blog_categories/${id}`)
+            axios.delete(`https://shop-backend.betamxpertz.xyz/api/blog_categories/${id}`)
             .then(() => {
                 this.fetchAllCategories();
                 this.$swal({
@@ -124,6 +124,7 @@ export default {
     mounted() {
         this.fetchAllUsers();
         this.fetchAllCategories();
+        document.title = 'Admin Dashboard Panel | Creative Web X'
     },
 }
 </script>

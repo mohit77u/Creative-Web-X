@@ -85,6 +85,9 @@
                 });
                 this.$router.push('/')
             }
+        },
+        mounted(){
+            document.title = 'Register For Admin Dashboard | Creative Web X'
         }
     }
 </script>

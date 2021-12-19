@@ -23,7 +23,6 @@ export default {
     AOS.init({
       once: true
     });
-  },
-  
+  },  
 }
 </script>

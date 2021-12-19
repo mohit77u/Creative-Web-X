@@ -9,8 +9,8 @@
                         <div class="section-heading">
                             <h6>Angular js Development</h6>
                             <h2>Design & Development</h2>
-                            <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <p>AngularJS is a JavaScript-based open-source front-end web framework for developing single-page applications. It is maintained mainly by Google and a community of individuals and corporations.</p>
+                            <p>We offer AngularJS development services that cover the range from music and video streaming apps to e-commerce and marketplaces, to social networking app development. Whether you have a learning platform or simply need a custom widget or an interactive dashboard, our AngularJS development services can cater to your needs.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Support and future maintenance', desc:'Easy annual maintenance plans for you.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best Angular js Website Development Company in India | Creative Web X'
     }
 }
 </script>

@@ -9,8 +9,8 @@
                         <div class="section-heading">
                             <h6>Laravel Development</h6>
                             <h2>Design & Development</h2>
-                            <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <p>The websites developed in Laravel follow the Model View Controller (MVC) to keep the code very well structured making it easy to maintain in future. Laravel is easy to maintain, customize and scale up as when required. Without having to face any glitches, the websites developed in Laravel work very smoothly.</p>
+                            <p>Laravel facilitates rapid website development like no other framework in market. With set commands in its artisan, the development bypasses all headaches and confusions that plagued website development before Laravel development came in picture.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Big Projects in Laravel', desc:'Laravel comes in very handy in big projects with full scalability.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best Laravel Development Company in India | Creative Web X'
     }
 }
 </script>

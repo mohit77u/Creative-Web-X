@@ -31,7 +31,7 @@
                             <div class="footer-last">
                                 <ul>
                                     <li><a href="#"><i class="fas fa-map-marker-alt"></i>Indore, Madhya Pradesh</a></li>
-                                    <li><a href="mailto:mohiit77u@gmail.com"><i class="fas fa-envelope"></i>mohiit77u@gmail.com</a></li>
+                                    <li><a href="mailto:info@creativewebx.thats.im"><i class="fas fa-envelope"></i>info@creativewebx.thats.im</a></li>
                                     <li><a href="tel:918269584409"><i class="fas fa-phone"></i>+91 8269584409</a></li>
                                 </ul>
                             </div>
@@ -64,7 +64,7 @@ export default {
                         {name: 'About', url:'/about'},
                         {name: 'Services', url:'/services'},
                         {name: 'Blog', url:'/blog'},
-                        {name: 'Contact us', url:'/contact us'},
+                        {name: 'Contact us', url:'/contact'},
                     ],
                 },
                 { 
@@ -72,6 +72,7 @@ export default {
                     links: [
                         {name: 'Frontend Development', url:'/frontend-development'},
                         {name: 'WordPress Development', url:'/wordPress-development'},
+                        {name: 'CMS Website Development', url:'/cms-website-development'},
                         {name: 'Graphics Designing', url:'/graphics-designing'},
                         {name: 'Mobile App Development', url:'/app-development'},
                         {name: 'Laravel Development', url:'/laravel-development'},

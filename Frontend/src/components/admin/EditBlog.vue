@@ -120,7 +120,7 @@ export default {
         }
     },
     created(){
-        axios.get(`http://localhost:8000/api/blogs/${this.$route.params.id}`)
+        axios.get(`https://shop-backend.betamxpertz.xyz/api/blogs/${this.$route.params.id}`)
         .then((res)=> {
             this.blog = res.data
         });
@@ -128,7 +128,7 @@ export default {
     methods: {
         updateBlog(){
            this.loading= true
-            axios.put(`http://localhost:8000/api/blogs/${this.$route.params.id}`,this.blog)
+            axios.put(`https://shop-backend.betamxpertz.xyz/api/blogs/${this.$route.params.id}`,this.blog)
             .then(()=>{
                 this.loading= false
                 this.$swal({
@@ -145,7 +145,7 @@ export default {
             })
         },
         fetchAllCategories() {
-            axios.get('http://localhost:8000/api/blog_categories')
+            axios.get('https://shop-backend.betamxpertz.xyz/api/blog_categories')
             .then(res => {
                 this.categories = res.data
             })
@@ -157,6 +157,7 @@ export default {
     },
     mounted(){
         this.fetchAllCategories();
+        document.title = 'Update Blog created by Creative Web X'
     }
     
 }

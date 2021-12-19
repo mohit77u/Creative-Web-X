@@ -30,7 +30,7 @@
             }
         },
         created(){
-            axios.get('http://localhost:8000/api/user',{
+            axios.get('https://shop-backend.betamxpertz.xyz/api/user',{
                 headers:{
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -42,20 +42,9 @@
         beforeCreate () {
             if(this.$store.state.token == null) {
                 this.$router.push('/login')
-            }
+            } else this.$router.push('/dashboard/admin')
             
         }
         
     }
 </script>
-
-<style scoped>
-    .fade-enter-active,
-    .fade-leave-active {
-        transition: opacity 0.8s ease;
-    }
-    .fade-enter-from,
-    .fade-leave-to {
-        opacity: 0;
-    }
-</style>

@@ -16,15 +16,15 @@
                                     <router-link :to="{name:'SingleBlog', params:{id:blog.id,slug:blog.slug}}">
                                         <div class="blog-card card">
                                             <div class="blog-top">
-                                                <img :src="'http://localhost:8000' + blog.featured_image" :alt="blog.title">
+                                                <img :src="'https://shop-backend.betamxpertz.xyz' + blog.featured_image" :alt="blog.title">
                                                 <!-- <p>{{blog.category_name}}</p> -->
                                             </div>
                                             <div class="card-body">
-                                                <h4>{{blog.title}}</h4>
-                                                <p>{{blog.excerpt}}</p>
+                                                <h4 class="blogtitle">{{blog.title}}</h4>
+                                                <p>{{blog.description}}</p>
                                                 <div class="find">
                                                     <div class="line"></div>
-                                                    <router-link to="#" class="findbtn">Find out more</router-link>
+                                                    <p class="findbtn">Find out more</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -54,6 +54,7 @@ export default {
     components:{
         Breadcumb,BlogSidebar
     },
+    
     data(){
         return{
             title:'',
@@ -70,15 +71,14 @@ export default {
     },
     methods:{
         fetchAllBlogs() {
-            axios.get(`http://localhost:8000/api/category/${this.$route.params.id}`)
+            axios.get(`https://shop-backend.betamxpertz.xyz/api/category/${this.$route.params.id}`)
             .then((res)=> {
                 this.blogs = res.data
-                this.title = res.data.category_name
             });          
             
         },
         fetchCategory() {
-            axios.get(`http://localhost:8000/api/blog_categories/${this.$route.params.id}`)
+            axios.get(`https://shop-backend.betamxpertz.xyz/api/blog_categories/${this.$route.params.id}`)
             .then((res)=> {
                 this.category = res.data
                 this.title = res.data.category_name
@@ -89,6 +89,7 @@ export default {
     mounted(){
         this.fetchAllBlogs();
         this.fetchCategory();
+        document.title = 'Category Blogs You Can Follow | Creative Web X';
     }
 }
 </script>

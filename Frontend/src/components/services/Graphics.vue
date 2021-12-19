@@ -8,9 +8,9 @@
                     <div class="col-sm-6" data-aos="fade-right" data-aos-delay="600">
                         <div class="section-heading">
                             <h6>Graphics Designing</h6>
-                            <h2>Design & Development</h2>
-                            <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <h2>Creativity & Designing</h2>
+                            <p>Our graphics designing team creates stunning graphics that communicate clearly with the customers. Choice of colors, imagery and message are well thought of to make it stand apart from the deluge of the creative out there. The graphics designed keep the logo, website and the tone of social media campaigns in mind to create the perfect designs. These designs can be used on all social media platforms and website easily.</p>
+                            <p>Our designs have been appreciated by brands, peer agencies and the most by the customers who have cited the beauty and the uniqueness of the creative. We also design, brand collaterals like visiting card, pamphlets, brochures, standees, menu card, posters and a lot more. For the beautiful artworks we produce.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Call to action', desc:'The design should not be just any other design but a conversion tool for the brand.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best Graphics Designing Company in India | Creative Web X'
     }
 }
 </script>

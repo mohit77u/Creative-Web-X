@@ -10,6 +10,7 @@
                             <div class="section-heading mb-5">
                                 <h6>Blog</h6>
                                 <h2>Interesting reads for you</h2>
+                                <p v-if="searchItem">No results found</p>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6" v-for="(blog,index) in blogs" :key="index">
@@ -56,25 +57,34 @@ export default {
     },
     data(){
         return{
-            title:'Blog',
+            title:'',
             blogs:[],
             search:'',
         }
     },
+    computed:{
+        searchItem(){
+            return this.blogs.length == 0
+        }
+    },
+    watch:{
+        $route(){
+            this.searchBlog();
+        }
+    },
     methods:{
-        fetchAllBlogs() {
-            axios.get('https://shop-backend.betamxpertz.xyz/api/blogs')
-            .then(response => {
-                this.blogs = response.data
-            })
-            .catch(error=>{
-                console.log(error)
-            }) 
-        },
+        searchBlog(){
+            // axios.get('https://shop-backend.betamxpertz.xyz/api/blog/search?q=' + this.search)
+            axios.get(`https://shop-backend.betamxpertz.xyz/api/blog/search?q=${this.$route.params.search}`)
+            .then((res)=> {
+                this.blogs = res.data
+                this.title = this.blogs.length + ' Search results for ' + this.$route.params.search
+            });
+        }
     },
     mounted(){
-        this.fetchAllBlogs();
-        document.title = 'Best Web Development Blogs You Should Follow | Creative Web X'
+        this.searchBlog();
+        document.title = 'Search Results Of Blog On Web Development | Creative Web X'
     }
 }
 </script>

@@ -10,7 +10,7 @@
                             <h6>WordPress Website Development</h6>
                             <h2>Design & Development</h2>
                             <p>Over the last few years, WordPress has changed people’s life. Covid-19 pandemic has made this channel a one stop solution for all customers. People now more comfortable to shop online than visit an offline store. In this digital world when everything has gone digital.</p>
-                            <p>The main advantage of WordPress is that consumers get all products under a single roof and they can order it from anywhere anytime which obviously makes our daily life easier. Owing to its scope and scale, online store of a business helps to convert the online traffic into sales easily.</p>
+                            <p>WordPress is one of the easiest and most powerful content management systems that come with numerous features to make your experience pleasing and appealing. It maintains a worldwide community to help you 24*7. Numerous plugins are available to add features to your site.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -89,6 +89,9 @@ export default {
                 {image:'responsive.png', title:'Responsiveness', desc:'Responsiveness on mobiles, tablets and yes on desktops too.'},
             ]
         }
+    },
+    mounted(){
+        document.title = 'Best WordPress Website Development Company in India | Creative Web X'
     }
 }
 </script>
